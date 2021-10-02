@@ -1,0 +1,42 @@
+.open {
+    background-color: rgb(156, 0, 156) !important;
+    color: white !important;
+}
+
+
+.cerrar{
+    background-color: white !important;
+    border: 1px rgb(156, 0, 156) solid !important;
+    color: rgb(156, 0, 156) !important;
+   
+}
+.boton{
+    margin-top: 3%;
+ 
+   
+}
+
+.cerrar:hover{
+    background-color: rgb(156, 0, 156) !important;
+    color: white !important;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.custom-card {
+    max-width: 500px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.botonn{
+    margin: 1%;
+    margin-bottom: 3%;
+}
+
+.container{
+    padding-top: 6%;
+}
