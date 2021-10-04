@@ -1,42 +1,137 @@
+:root {
+  --bunttoncolor: rgba(231, 231, 231, 0.521);
+}
+
 .open {
-    background-color: rgb(156, 0, 156) !important;
-    color: white !important;
+  background-color: rgb(156, 0, 156) !important;
+  color: white !important;
 }
 
-
-.cerrar{
-    background-color: white !important;
-    border: 1px rgb(156, 0, 156) solid !important;
-    color: rgb(156, 0, 156) !important;
-   
+.cerrar {
+  background-color: white !important;
+  border: 1px rgb(156, 0, 156) solid !important;
+  color: rgb(156, 0, 156) !important;
 }
-.boton{
-    margin-top: 3%;
- 
-   
+.boton {
+  margin-top: 3%;
 }
 
-.cerrar:hover{
-    background-color: rgb(156, 0, 156) !important;
-    color: white !important;
+.cerrar:hover {
+  background-color: rgb(156, 0, 156) !important;
+  color: white !important;
 }
 
-html, body {
-    width: 100%;
-    min-height: 100vh;
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .custom-card {
+  max-width: 500px;
+  border-radius: 6px;
+  border-style: none;
+}
+.custom {
+  max-width: 500px;
+  border-radius: 6px;
+  border-style: none;
+  height: 500px;
+}
+
+.botonn {
+  margin: 1%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  padding-top: 6%;
+}
+
+.cc {
+  color: white;
+  border-radius: 6px;
+  border-style: none;
+  width: 90%;
+  height: 200px;
+}
+.txt {
+  padding-top: 5%;
+}
+
+.dashboard {
+  padding-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.dash {
+  padding-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.consigna {
+  height: 90px;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  background-color: var(--bunttoncolor);
+  border-radius: 6px;
+}
+.consigna h3 {
+  font-size: 20px;
+}
+.retirar h3 {
+  font-size: 20px;
+}
+.retirar {
+  height: 90px;
+  width: 30%;
+  text-align: center;
+  background-color: var(--bunttoncolor);
+  border-radius: 6px;
+}
+
+.img {
+  padding-top: 5%;
+}
+
+.text {
+  font-size: 30px;
+}
+.text-1 {
+  font-size: 40px;
+}
+
+
+.cancel{
+    height: 90px;
+  width: 30%;
+  text-align: center;
+  background-color: var(--bunttoncolor);
+  border-radius: 6px;
+    
+}
+
+.aceptar{
+    height: 90px;
+  width: 30%;
+  text-align: center;
+  background-color: var(--bunttoncolor);
+  border-radius: 6px;
+}
+
+.ccard {
     max-width: 500px;
     border-radius: 6px;
     border-style: none;
-}
+    height: 500px;
+  }
 
-.botonn{
-    margin: 1%;
-    margin-bottom: 3%;
-}
-
-.container{
-    padding-top: 6%;
+.titles{
+    font-size: 20px;
 }
