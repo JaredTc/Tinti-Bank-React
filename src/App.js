@@ -1,5 +1,4 @@
 import {CardSesion} from './components/Card_Sesion'
-import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './styles/style.css'
 

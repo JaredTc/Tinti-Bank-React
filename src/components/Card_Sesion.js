@@ -171,7 +171,7 @@ export const CardSesion = () => {
                         </div>
                         <div className="row mb-3">
                             <div className="col-12 col-md-4">
-                                <label htmlFor="name" classBane="form-label">Nombre </label>
+                                <label htmlFor="name" classBane="form-label">Nombre <FontAwesomeIcon icon={faUser} /></label>
                             </div>
                             <div className="col-12 col-md-8">
                                 <input type="text" name="name" id="saldo" maxLength="30" className="form-control" onChange={handleInputChange} onFocus={handleFocusChange}
@@ -202,22 +202,22 @@ export const CardSesion = () => {
                     <div className="dashboard">
 
                         <div onClick={Consignar} className="consigna">
-                            <img src={coin} className="img" width="50" />
+                            <img src={coin} className="img" width="50" alt="..." />
                             <h3>Consignar</h3>
                         </div>
                         <div onClick={Retirar} className="retirar">
-                            <img src={retiro} className="img" width="50" />
+                            <img src={retiro} className="img" width="50" alt="..."/>
                             <h3>Retirar</h3>
                         </div>
                     </div>
                     <div className="dash">
 
                         <div className="consigna">
-                            <img src={setting} className="img" width="50" />
+                            <img src={setting} className="img" width="50" alt="..." />
                             <h3>Herramientas</h3>
                         </div>
                         <div onClick={cerrarSesion} className="retirar">
-                            <img src={close} className="img" width="50" />
+                            <img src={close} className="img" width="50" alt="..."/>
                             <h3>Cerrar Sesion</h3>
                         </div>
                     </div>
@@ -228,18 +228,18 @@ export const CardSesion = () => {
                 <div className="card-body ccard d-flex flex-column align-items-center">
 
                     <h2>Consignacion</h2>
-                    <img src={coin} width="70" />
+                    <img src={coin} width="70" alt="..." />
                     <label for="">Ingrese la cantidad a consignar</label>
                     <div>
                         <input type="number" id="cantidad" className="form-control" required />
                     </div>
                     <div className="dashboard">
                         <div onClick={cancelar} className="cancel">
-                            <img src={cancel} className="img" width="50" />
+                            <img src={cancel} className="img" width="50" alt="..." />
                             <h3 className="titles">Cancelar</h3>
                         </div>
                         <div onClick={Aceptarconsigna} className="aceptar">
-                            <img src={acept} className="img" width="50" />
+                            <img src={acept} className="img" width="50" alt="..." />
                             <h3 className="titles">Aceptar</h3>
 
                         </div>
@@ -252,18 +252,18 @@ export const CardSesion = () => {
                 <div className="card-body d-flex flex-column align-items-center">
 
                     <h2>Retiro</h2>
-                    <img src={retiro} width="70" />
+                    <img src={retiro} width="70" alt="..." />
                     <label for="">Ingrese la cantidad a Retirar</label>
                     <div>
                         <input type="number" id="retiro" className="form-control" required />
                     </div>
                     <div className="dashboard">
                         <div onClick={cancelar} className="cancel">
-                            <img src={cancel} className="img" width="50" />
+                            <img src={cancel} className="img" width="50" alt="..."/>
                             <h3 className="titles">Cancelar</h3>
                         </div>
                         <div onClick={AceptarRetiro} className="aceptar">
-                            <img src={acept} className="img" width="50" />
+                            <img src={acept} className="img" width="50" alt="..." />
                             <h3 className="titles">Aceptar</h3>
                         </div>
                     </div>
