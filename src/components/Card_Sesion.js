@@ -10,7 +10,7 @@ import setting from '../assets/settings.png'
 import React, { useState } from 'react'
 import Cards from 'react-credit-cards'
 import 'react-credit-cards/es/styles-compiled.css'
-
+ 
 
 export const CardSesion = () => {
 
@@ -46,19 +46,22 @@ export const CardSesion = () => {
     const AbrirCuenta = (event) => {
         event.preventDefault()
 
-        var inputEmail = document.getElementById('sald')
-        var total = inputEmail.value
-        localStorage.setItem('saldo', total)
+        let inputEmail = document.getElementById('sald')
+        let total = inputEmail.value
+        if ( total > 0){
+            localStorage.setItem('saldo', total)
+            let mostrarSaldo = document.getElementById('totalmoney')
+            mostrarSaldo.innerHTML = total
+    
+            mostrarTarjeta()
 
-        var mostrarSaldo = document.getElementById('totalmoney')
-        mostrarSaldo.innerHTML = total
-
-        mostrarTarjeta()
+        } else {
+            alert('Inserte un saldo valido')
+        }
+       
     }
     const Consignar = (event) => {
         event.preventDefault()
-
-
         var tarjetaConsignacion = document.getElementById('tarjeta-consignar')
         var tarjetaSaldo = document.getElementById('tarjeta-saldo')
         tarjetaSaldo.classList.add('d-none')
@@ -97,24 +100,21 @@ export const CardSesion = () => {
         var tarjetaSaldo = document.getElementById('tarjeta-saldo')
         tarjetaSaldo.classList.remove('d-none')
         tarjetaConsigna.classList.add('d-none')
-
-
-
         var valor = document.getElementById('cantidad')
         var sal = valor.value
         var mon  = localStorage.getItem('saldo')
         
-        var total = mon - sal
-        localStorage.setItem('saldo', total)
-        var mostrarSaldo = document.getElementById('totalmoney')
-        mostrarSaldo.innerHTML = total
-
+        if(mon > 0){
+            var total = mon - sal
+            localStorage.setItem('saldo', total)
+            var mostrarSaldo = document.getElementById('totalmoney')
+            mostrarSaldo.innerHTML = total
+        }  else {
+            alert('No pudes realizar operaciones con saldo 0')
+        }
         limpiarFormulario()
 
-        if (total === 0) {
-            alert('Su cuenta ha quedado en 0, no puede hacer mas movimientos')
-
-        }
+        
 
     }
     const AceptarRetiro = (event) => {
@@ -125,14 +125,16 @@ export const CardSesion = () => {
 
         var valor = document.getElementById('retiro')
         var sal = valor.value
-        // var sald = document.getElementById('sald')
         var mon  = localStorage.getItem('saldo')
         
-        var total = mon - sal
-
-        localStorage.setItem('saldo', total)
-        var mostrarSaldo = document.getElementById('totalmoney')
-        mostrarSaldo.innerHTML = total
+        if(mon > 0){
+            var total = mon - sal
+            localStorage.setItem('saldo', total)
+            var mostrarSaldo = document.getElementById('totalmoney')
+            mostrarSaldo.innerHTML = total
+        }  else {
+            alert('No pudes realizar operaciones con saldo 0')
+        }
 
 
         limpiarFormulario()
@@ -147,6 +149,15 @@ export const CardSesion = () => {
         inputRetiro.value = ""
         inputSaldo.value = ""
         inoutConsigna.value = ""
+    }
+    const validar = (event) =>{
+        event.preventDefault()
+       
+
+        if(event.keyCode < 48 || event.keyCode > 57  ) {
+            event.returnValue = false;
+        } 
+        
     }
 
     return (
@@ -166,7 +177,7 @@ export const CardSesion = () => {
                                 <label htmlFor="number" className="form-label">Numero de tarjeta </label>
                             </div>
                             <div className="col-12 col-md-8">
-                                <input type="number" name="number" id="number" maxLength="16" className="form-control" onChange={handleInputChange} onFocus={handleFocusChange}
+                                <input type="number" name="number" id="number" minLength="16" className="form-control" onChange={handleInputChange} onFocus={handleFocusChange}
                                     required />
                             </div>
                         </div>
@@ -189,7 +200,7 @@ export const CardSesion = () => {
                         </div>
 
                         <div className="d-flex justify-content-center">
-                            <button type="submit" className="btn btn-dark">Abrir Cuenta</button>
+                            <button onKeyPress={validar} type="submit" className="btn btn-dark">Abrir Cuenta</button>
                         </div>
                     </form>
                 </div>
@@ -239,7 +250,7 @@ export const CardSesion = () => {
                             <img src={cancel} className="img" width="50" alt="..." />
                             <h3 className="titles">Cancelar</h3>
                         </div>
-                        <div onClick={Aceptarconsigna} className="aceptar">
+                        <div onClick={Aceptarconsigna} id="consigna" className="aceptar">
                             <img src={acept} className="img" width="50" alt="..." />
                             <h3 className="titles">Aceptar</h3>
 
