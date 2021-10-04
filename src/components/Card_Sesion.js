@@ -102,9 +102,9 @@ export const CardSesion = () => {
 
         var valor = document.getElementById('cantidad')
         var sal = valor.value
-        var sald = document.getElementById('sald')
-        var val = sald.value
-        var total = val - sal
+        var mon  = localStorage.getItem('saldo')
+        
+        var total = mon - sal
         localStorage.setItem('saldo', total)
         var mostrarSaldo = document.getElementById('totalmoney')
         mostrarSaldo.innerHTML = total
@@ -125,9 +125,10 @@ export const CardSesion = () => {
 
         var valor = document.getElementById('retiro')
         var sal = valor.value
-        var sald = document.getElementById('sald')
-        var val = sald.value
-        var total = val - sal
+        // var sald = document.getElementById('sald')
+        var mon  = localStorage.getItem('saldo')
+        
+        var total = mon - sal
 
         localStorage.setItem('saldo', total)
         var mostrarSaldo = document.getElementById('totalmoney')
