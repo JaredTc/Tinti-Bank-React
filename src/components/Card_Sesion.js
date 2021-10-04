@@ -166,7 +166,7 @@ export const CardSesion = () => {
                                 <label htmlFor="number" className="form-label">Numero de tarjeta </label>
                             </div>
                             <div className="col-12 col-md-8">
-                                <input type="text" name="number" id="number" maxLength="16" className="form-control" onChange={handleInputChange} onFocus={handleFocusChange}
+                                <input type="number" name="number" id="number" maxLength="16" className="form-control" onChange={handleInputChange} onFocus={handleFocusChange}
                                     required />
                             </div>
                         </div>
