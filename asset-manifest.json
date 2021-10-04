@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/tinto-bank-react/static/css/main.ebaa17b3.chunk.css",
+    "main.js": "/tinto-bank-react/static/js/main.b3dbd049.chunk.js",
+    "main.js.map": "/tinto-bank-react/static/js/main.b3dbd049.chunk.js.map",
+    "runtime-main.js": "/tinto-bank-react/static/js/runtime-main.21107caf.js",
+    "runtime-main.js.map": "/tinto-bank-react/static/js/runtime-main.21107caf.js.map",
+    "static/css/2.451bd7bb.chunk.css": "/tinto-bank-react/static/css/2.451bd7bb.chunk.css",
+    "static/js/2.85b1dbd9.chunk.js": "/tinto-bank-react/static/js/2.85b1dbd9.chunk.js",
+    "static/js/2.85b1dbd9.chunk.js.map": "/tinto-bank-react/static/js/2.85b1dbd9.chunk.js.map",
+    "static/js/3.4561eecd.chunk.js": "/tinto-bank-react/static/js/3.4561eecd.chunk.js",
+    "static/js/3.4561eecd.chunk.js.map": "/tinto-bank-react/static/js/3.4561eecd.chunk.js.map",
+    "index.html": "/tinto-bank-react/index.html",
+    "static/css/2.451bd7bb.chunk.css.map": "/tinto-bank-react/static/css/2.451bd7bb.chunk.css.map",
+    "static/css/main.ebaa17b3.chunk.css.map": "/tinto-bank-react/static/css/main.ebaa17b3.chunk.css.map",
+    "static/js/2.85b1dbd9.chunk.js.LICENSE.txt": "/tinto-bank-react/static/js/2.85b1dbd9.chunk.js.LICENSE.txt",
+    "static/media/checked.6f298cca.png": "/tinto-bank-react/static/media/checked.6f298cca.png",
+    "static/media/dollar.84cf06a8.png": "/tinto-bank-react/static/media/dollar.84cf06a8.png",
+    "static/media/retirada.d9ec3dd3.png": "/tinto-bank-react/static/media/retirada.d9ec3dd3.png",
+    "static/media/settings.6ab2928a.png": "/tinto-bank-react/static/media/settings.6ab2928a.png",
+    "static/media/tacho-de-reciclaje.a795f440.png": "/tinto-bank-react/static/media/tacho-de-reciclaje.a795f440.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21107caf.js",
+    "static/css/2.451bd7bb.chunk.css",
+    "static/js/2.85b1dbd9.chunk.js",
+    "static/css/main.ebaa17b3.chunk.css",
+    "static/js/main.b3dbd049.chunk.js"
+  ]
+}
